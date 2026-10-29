@@ -1,0 +1,1620 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- Primary Meta Tags -->
+  <title>Apeksha A R | Information Science Engineer & Aspiring Software Engineer</title>
+  <meta name="title" content="Apeksha A R | Information Science Engineer & Aspiring Software Engineer" />
+  <meta name="description" content="Portfolio of Apeksha A R - Information Science Engineering student at Malnad College of Engineering (Autonomous), VTU. Specializing in DSA, Full-Stack Development (Django, JS), AI/ML, and Blockchain." />
+  <meta name="keywords" content="Apeksha A R, Software Engineer, Information Science, Malnad College of Engineering, Portfolio, Django, Python, Java, Data Structures, Blockchain, Web Development" />
+  <meta name="author" content="Apeksha A R" />
+
+  <!-- Open Graph / Facebook / LinkedIn -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://github.com/Apeksha-te" />
+  <meta property="og:title" content="Apeksha A R | Aspiring Software Engineer Portfolio" />
+  <meta property="og:description" content="Information Science Engineering student at MCE (VTU), CGPA 9.53. Explore my full-stack, AI/ML, and blockchain projects, achievements, and technical skills." />
+  <meta property="og:image" content="assets/images/og-preview.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%236366f1'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='50' font-weight='900' fill='white'>AR</text></svg>" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Custom Dynamic Cursor -->
+  <div class="cursor-dot" id="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-halo" id="cursor-halo" aria-hidden="true"></div>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress-bar" class="scroll-progress-bar" aria-hidden="true"></div>
+
+  <!-- Sticky Navigation Bar -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-brand" aria-label="Apeksha A R Homepage">
+        <span class="brand-monogram">AR</span>
+        <span class="brand-name">Apeksha A R<span class="brand-dot">.</span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li class="nav-item"><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li class="nav-item"><a href="#leadership" class="nav-link">Leadership</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Action Controls -->
+      <div class="nav-actions">
+        <!-- Theme Switcher Button -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark and Light Mode" title="Toggle Theme">
+          <i class="fa-solid fa-moon icon-dark" aria-hidden="true"></i>
+          <i class="fa-solid fa-sun icon-light" aria-hidden="true"></i>
+        </button>
+
+        <!-- Direct Resume Download Action -->
+        <a href="#resume-modal" class="btn btn-outline btn-sm nav-resume-btn" id="nav-resume-trigger">
+          <i class="fa-solid fa-file-arrow-down" aria-hidden="true"></i>
+          <span>Resume</span>
+        </a>
+
+        <!-- Mobile Menu Hamburger Button -->
+        <button class="mobile-toggle-btn" id="mobile-toggle" aria-label="Toggle navigation drawer" aria-expanded="false" aria-controls="mobile-drawer">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <aside class="mobile-drawer" id="mobile-drawer" aria-hidden="true">
+    <div class="drawer-header">
+      <div class="drawer-brand">
+        <span class="brand-monogram">AR</span>
+        <span class="drawer-name">Apeksha A R</span>
+      </div>
+      <button class="drawer-close-btn" id="drawer-close" aria-label="Close navigation menu">
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+      </button>
+    </div>
+    <ul class="drawer-list">
+      <li><a href="#hero" class="drawer-link"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="#about" class="drawer-link"><i class="fa-solid fa-user"></i> About</a></li>
+      <li><a href="#skills" class="drawer-link"><i class="fa-solid fa-code"></i> Skills</a></li>
+      <li><a href="#projects" class="drawer-link"><i class="fa-solid fa-diagram-project"></i> Projects</a></li>
+      <li><a href="#education" class="drawer-link"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+      <li><a href="#achievements" class="drawer-link"><i class="fa-solid fa-trophy"></i> Achievements</a></li>
+      <li><a href="#certifications" class="drawer-link"><i class="fa-solid fa-certificate"></i> Certifications</a></li>
+      <li><a href="#leadership" class="drawer-link"><i class="fa-solid fa-people-roof"></i> Leadership</a></li>
+      <li><a href="#contact" class="drawer-link"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <a href="#contact" class="btn btn-primary btn-full drawer-contact-btn">
+        <i class="fa-solid fa-envelope"></i> Get in Touch
+      </a>
+      <div class="drawer-socials">
+        <a href="https://github.com/Apeksha-te" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/apeksha-a-r-2342a7295" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:apekshaar835@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+  </aside>
+  <div class="drawer-backdrop" id="drawer-backdrop" aria-hidden="true"></div>
+
+  <main id="main-content">
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero-section section-padding" id="hero">
+      <div class="hero-background-effects" aria-hidden="true">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-grid-pattern"></div>
+        <div class="hero-cursor-spotlight" id="hero-spotlight"></div>
+      </div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <!-- Availability Pill -->
+          <div class="status-badge-wrapper fade-in-up">
+            <span class="status-indicator">
+              <span class="pulse-ring"></span>
+              <span class="pulse-dot"></span>
+            </span>
+            <span class="status-text">Open to Software Engineering & Internship Opportunities</span>
+          </div>
+
+          <h1 class="hero-title fade-in-up delay-1">
+            Hi, I'm <span class="gradient-text">Apeksha A R</span>
+          </h1>
+
+          <div class="hero-role-wrapper fade-in-up delay-2">
+            <span class="role-prefix">I am a </span>
+            <span class="dynamic-typing-text" id="typing-text" aria-live="polite"></span>
+            <span class="typing-cursor" aria-hidden="true">|</span>
+          </div>
+
+          <p class="hero-description fade-in-up delay-3">
+            Information Science Engineering undergraduate at <strong>Malnad College of Engineering (Autonomous), VTU</strong> with a <strong>9.53 CGPA</strong>. 
+            Passionate about architecting robust full-stack applications, designing scalable backend systems, exploring AI/ML agents, and building secure real-world software solutions.
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-cta-group fade-in-up delay-4">
+            <a href="#projects" class="btn btn-primary">
+              <span>View Projects</span>
+              <i class="fa-solid fa-arrow-right-long" aria-hidden="true"></i>
+            </a>
+            <a href="#resume-modal" class="btn btn-outline" id="hero-resume-trigger">
+              <i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+              <span>View Resume</span>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+              <span>Contact Me</span>
+            </a>
+          </div>
+
+          <!-- Quick Social Connect Bar -->
+          <div class="hero-social-strip fade-in-up delay-5">
+            <span class="social-label">Connect with me:</span>
+            <div class="social-links-list">
+              <a href="https://github.com/Apeksha-te" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="GitHub Profile">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+              </a>
+              <a href="https://www.linkedin.com/in/apeksha-a-r-2342a7295" target="_blank" rel="noopener noreferrer" class="social-pill" aria-label="LinkedIn Profile">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>LinkedIn</span>
+              </a>
+              <a href="mailto:apekshaar835@gmail.com" class="social-pill" aria-label="Send Direct Email">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email</span>
+              </a>
+              <a href="tel:+9148809662" class="social-pill" aria-label="Direct Phone Contact">
+                <i class="fa-solid fa-phone"></i>
+                <span>+91 91488 09662</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Interactive Card -->
+        <div class="hero-visual fade-in-up delay-2">
+          <div class="visual-card-wrapper">
+            <div class="card-glow-border"></div>
+            <div class="profile-showcase-card">
+              <!-- Profile Avatar Header -->
+              <div class="profile-header-area">
+                <div class="avatar-ring-container">
+                  <div class="avatar-inner-ring">
+                    <div class="profile-avatar" id="profile-avatar">
+                      <img id="avatar-image" src="assets/images/profile.jpg" alt="Apeksha A R Profile Photo" class="avatar-img-element" onerror="this.onerror=null; this.src='assets/images/placeholder.svg';" />
+                    </div>
+                  </div>
+                  <div class="avatar-online-badge" title="Active & Open for Collaboration"></div>
+                </div>
+
+                <div class="profile-title-area">
+                  <h3 class="profile-name">Apeksha A R</h3>
+                  <p class="profile-role">Information Science Engineering Student</p>
+                  <p class="profile-institution"><i class="fa-solid fa-building-columns"></i> Malnad College of Engineering</p>
+                </div>
+              </div>
+
+              <!-- Quick Highlights Badges -->
+              <div class="profile-tags-grid">
+                <div class="profile-tag-item">
+                  <span class="tag-label">Current CGPA</span>
+                  <span class="tag-val text-accent-indigo">9.53 / 10.0</span>
+                </div>
+                <div class="profile-tag-item">
+                  <span class="tag-label">Specialization</span>
+                  <span class="tag-val">ISE (2023 - Pres.)</span>
+                </div>
+                <div class="profile-tag-item">
+                  <span class="tag-label">Focus Area</span>
+                  <span class="tag-val text-accent-cyan">DSA & Full-Stack</span>
+                </div>
+                <div class="profile-tag-item">
+                  <span class="tag-label">Native Language</span>
+                  <span class="tag-val">Kannada & English</span>
+                </div>
+              </div>
+
+              <!-- Live Tech Terminal Snippet -->
+              <div class="terminal-mini-box">
+                <div class="terminal-dots">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                  <span class="terminal-title">apeksha@dev-machine:~$</span>
+                </div>
+                <div class="terminal-code">
+                  <code><span class="token-keyword">const</span> <span class="token-var">engineer</span> = {</code>
+                  <code>  name: <span class="token-string">"Apeksha A R"</span>,</code>
+                  <code>  skills: [<span class="token-string">"Python"</span>, <span class="token-string">"Django"</span>, <span class="token-string">"DSA"</span>, <span class="token-string">"C"</span>, <span class="token-string">"Java"</span>],</code>
+                  <code>  passion: <span class="token-string">"Scalable & Secure Solutions"</span>,</code>
+                  <code>  status: <span class="token-bool">"Ready to innovate"</span></code>
+                  <code>};</code>
+                </div>
+              </div>
+
+              <!-- Floating Micro Badges -->
+              <div class="floating-badge badge-top-right">
+                <i class="fa-solid fa-trophy text-amber"></i>
+                <div>
+                  <span class="f-title">2nd Prize Winner</span>
+                  <span class="f-desc">InnovateX 2024</span>
+                </div>
+              </div>
+              <div class="floating-badge badge-bottom-left">
+                <i class="fa-solid fa-code text-cyan"></i>
+                <div>
+                  <span class="f-title">Full-Stack & Blockchain</span>
+                  <span class="f-desc">Django & SHA-256</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT ME SECTION ==================== -->
+    <section class="about-section section-padding" id="about">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Get to Know Me</span>
+          <h2 class="section-title">About <span class="gradient-text">Apeksha A R</span></h2>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="about-grid">
+          <!-- Left Column: Biography & Background -->
+          <div class="about-bio-column reveal-on-scroll">
+            <h3 class="about-subheading">
+              Building purposeful software through strong algorithmic foundations and clean engineering.
+            </h3>
+
+            <p class="about-paragraph">
+              I am an aspiring Software Engineer currently pursuing my Bachelor of Engineering in <strong>Information Science and Engineering</strong> at <strong>Malnad College of Engineering (Autonomous), VTU</strong> in Hassan, Karnataka, maintaining an exceptional academic record of <strong>9.53 CGPA</strong>.
+            </p>
+
+            <p class="about-paragraph">
+              My engineering philosophy is anchored in a solid command of <strong>Data Structures and Algorithms (DSA)</strong> and hands-on proficiency in <strong>Python, C, Java, and modern Web Development</strong>. I am driven by the challenge of translating complex real-world requirements into elegant, efficient, and scalable software systems—from secure Django web applications and blockchain tracking protocols to intelligent AI agents.
+            </p>
+
+            <p class="about-paragraph">
+              Beyond individual development, I thrive in collaborative settings. Having served as a <strong>Creative and Website Head</strong> and conducted technical workshops for students under <strong>IUCEE</strong>, I value clear communication, mentorship, and continuous learning.
+            </p>
+
+            <!-- Key Highlights List -->
+            <div class="highlights-grid">
+              <div class="highlight-item">
+                <div class="highlight-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                <div>
+                  <h4 class="highlight-title">Full-Stack Development</h4>
+                  <p class="highlight-text">Django, Python, JavaScript, HTML5/CSS3, and Bootstrap for robust end-to-end web apps.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon"><i class="fa-solid fa-cubes-stacked"></i></div>
+                <div>
+                  <h4 class="highlight-title">Core Computer Science</h4>
+                  <p class="highlight-text">Deep grasp of Data Structures, Algorithms, OOP, Database normalization, and Cryptography.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon"><i class="fa-solid fa-brain"></i></div>
+                <div>
+                  <h4 class="highlight-title">Emerging Tech & AI</h4>
+                  <p class="highlight-text">Exploring Autonomous AI Agents, Machine Learning calorie estimators, and SHA-256 Blockchains.</p>
+                </div>
+              </div>
+              <div class="highlight-item">
+                <div class="highlight-icon"><i class="fa-solid fa-compass-drafting"></i></div>
+                <div>
+                  <h4 class="highlight-title">UI/UX Design & Figma</h4>
+                  <p class="highlight-text">Designing human-centered wireframes, mockups, and intuitive user experiences with Figma.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Personal Photo Showcase & Candidate Overview -->
+          <div class="about-details-column reveal-on-scroll delay-1">
+            <!-- Interactive Featured Photo Card -->
+            <div class="about-photo-card tilt-card" id="about-photo-card">
+              <div class="about-photo-frame">
+                <img id="about-featured-img" src="assets/images/portrait-standing.jpg" alt="Apeksha A R - Information Science Student" class="about-featured-image" />
+                <div class="photo-vignette-overlay"></div>
+                
+                <!-- Interactive Photo Switcher Controls -->
+                <div class="photo-switcher-control">
+                  <span class="switcher-label"><i class="fa-solid fa-images"></i> Photos:</span>
+                  <div class="switcher-pills">
+                    <button type="button" class="photo-pill-btn active" data-img="assets/images/portrait-standing.jpg" title="View Balcony Portrait">
+                      <i class="fa-solid fa-user"></i> Portrait 1
+                    </button>
+                    <button type="button" class="photo-pill-btn" data-img="assets/images/portrait-campus.jpg" title="View Campus Portrait">
+                      <i class="fa-solid fa-graduation-cap"></i> Portrait 2
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Floating Micro Badges -->
+                <div class="photo-badge-chip chip-top-left">
+                  <span class="pulse-dot"></span>
+                  <span>Apeksha A R &bull; B.E. ISE</span>
+                </div>
+                <div class="photo-badge-chip chip-bottom-right">
+                  <i class="fa-solid fa-award text-amber"></i>
+                  <span>9.53 CGPA &bull; Malnad College of Engg.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Candidate Overview Card -->
+            <div class="info-card tilt-card">
+              <h4 class="info-card-title"><i class="fa-solid fa-address-card"></i> Candidate Overview</h4>
+              <ul class="personal-info-list">
+                <li>
+                  <span class="info-meta"><i class="fa-solid fa-user"></i> Full Name:</span>
+                  <span class="info-val">Apeksha A R</span>
+                </li>
+                <li>
+                  <span class="info-meta"><i class="fa-solid fa-graduation-cap"></i> Degree:</span>
+                  <span class="info-val">B.E. in Information Science & Engg.</span>
+                </li>
+                <li>
+                  <span class="info-meta"><i class="fa-solid fa-building-columns"></i> University:</span>
+                  <span class="info-val">Malnad College of Engineering (VTU)</span>
+                </li>
+                <li>
+                  <span class="info-meta"><i class="fa-solid fa-star"></i> Academic Standing:</span>
+                  <span class="info-val text-accent-indigo"><strong>9.53 CGPA</strong> (2023 - Present)</span>
+                </li>
+                <li>
+                  <span class="info-meta"><i class="fa-solid fa-location-dot"></i> Location:</span>
+                  <span class="info-val">Hassan, Karnataka, India</span>
+                </li>
+                <li>
+                  <span class="info-meta"><i class="fa-solid fa-envelope"></i> Email:</span>
+                  <span class="info-val"><a href="mailto:apekshaar835@gmail.com">apekshaar835@gmail.com</a></span>
+                </li>
+                <li>
+                  <span class="info-meta"><i class="fa-solid fa-phone"></i> Phone:</span>
+                  <span class="info-val"><a href="tel:+9148809662">+91 91488 09662</a></span>
+                </li>
+                <li>
+                  <span class="info-meta"><i class="fa-solid fa-language"></i> Languages:</span>
+                  <span class="info-val">English (Proficient), Kannada (Native)</span>
+                </li>
+              </ul>
+
+              <div class="info-card-cta">
+                <a href="#contact" class="btn btn-primary btn-full">
+                  <i class="fa-solid fa-paper-plane"></i> Discuss an Opportunity
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dynamic Counter Stats Strip -->
+        <div class="stats-counter-strip reveal-on-scroll">
+          <div class="stat-box">
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="9.53" data-decimals="2">0.00</span>
+            </div>
+            <span class="stat-label">B.E. CGPA (Out of 10)</span>
+            <span class="stat-sublabel">Malnad College of Engg.</span>
+          </div>
+
+          <div class="stat-box">
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="6" data-decimals="0">0</span>
+              <span class="stat-plus">+</span>
+            </div>
+            <span class="stat-label">Engineering Projects</span>
+            <span class="stat-sublabel">Full-Stack, AI & Blockchain</span>
+          </div>
+
+          <div class="stat-box">
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="3" data-decimals="0">0</span>
+            </div>
+            <span class="stat-label">Hackathons & Competitions</span>
+            <span class="stat-sublabel">Including 2nd Prize InnovateX</span>
+          </div>
+
+          <div class="stat-box">
+            <div class="stat-number-wrapper">
+              <span class="stat-number" data-target="100" data-decimals="0">0</span>
+              <span class="stat-plus">+</span>
+            </div>
+            <span class="stat-label">Students Mentored</span>
+            <span class="stat-sublabel">Through IUCEE Web Workshops</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== TECHNICAL SKILLS SECTION ==================== -->
+    <section class="skills-section section-padding bg-alt" id="skills">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Core Proficiencies</span>
+          <h2 class="section-title">Technical <span class="gradient-text">Skills & Expertise</span></h2>
+          <p class="section-description">
+            A comprehensive overview of programming languages, development frameworks, core computer science disciplines, and design tools I leverage to build software.
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Skills Filter Tabs -->
+        <div class="skills-tabs" role="tablist" aria-label="Skills Category Filter">
+          <button class="skill-tab active" data-category="all" role="tab" aria-selected="true">All Skills</button>
+          <button class="skill-tab" data-category="languages" role="tab" aria-selected="false">Programming Languages</button>
+          <button class="skill-tab" data-category="web" role="tab" aria-selected="false">Web & Frameworks</button>
+          <button class="skill-tab" data-category="core" role="tab" aria-selected="false">Core CS & Algorithms</button>
+          <button class="skill-tab" data-category="tools" role="tab" aria-selected="false">Tools & UI/UX Design</button>
+        </div>
+
+        <!-- Skills Grid Container -->
+        <div class="skills-display-grid" id="skills-grid">
+          <!-- Programming Languages Category -->
+          <div class="skill-category-card reveal-on-scroll" data-category="languages">
+            <div class="category-header">
+              <div class="cat-icon-box cat-lang"><i class="fa-solid fa-terminal"></i></div>
+              <h3 class="category-name">Programming Languages</h3>
+            </div>
+            <p class="category-summary">Foundational and high-level languages used for systems, scripting, and enterprise application development.</p>
+            
+            <div class="skill-items-container">
+              <div class="skill-item">
+                <div class="skill-item-head">
+                  <span class="skill-name"><i class="fa-brands fa-python text-python"></i> Python</span>
+                  <span class="skill-level-badge">Advanced</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="--skill-width: 90%;"></div>
+                </div>
+                <span class="skill-context">Backend scripting, Django development, AI/ML exploration, algorithms.</span>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-item-head">
+                  <span class="skill-name"><i class="fa-solid fa-c text-c"></i> C Language</span>
+                  <span class="skill-level-badge">Proficient</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="--skill-width: 85%;"></div>
+                </div>
+                <span class="skill-context">Low-level systems programming, memory management, pointers, and DSA.</span>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-item-head">
+                  <span class="skill-name"><i class="fa-brands fa-java text-java"></i> Java</span>
+                  <span class="skill-level-badge">Proficient</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="--skill-width: 80%;"></div>
+                </div>
+                <span class="skill-context">Object-Oriented Programming, enterprise structures, modular design.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web Development & Frameworks Category -->
+          <div class="skill-category-card reveal-on-scroll delay-1" data-category="web">
+            <div class="category-header">
+              <div class="cat-icon-box cat-web"><i class="fa-solid fa-globe"></i></div>
+              <h3 class="category-name">Web Development & Frameworks</h3>
+            </div>
+            <p class="category-summary">Modern frontend interfaces, backend application servers, REST patterns, and relational databases.</p>
+            
+            <div class="skill-items-container">
+              <div class="skill-item">
+                <div class="skill-item-head">
+                  <span class="skill-name"><i class="fa-solid fa-server text-django"></i> Django & Django ORM</span>
+                  <span class="skill-level-badge">Advanced</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="--skill-width: 90%;"></div>
+                </div>
+                <span class="skill-context">Model-View-Template architecture, authentication, ORM queries, role access.</span>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-item-head">
+                  <span class="skill-name"><i class="fa-brands fa-js text-js"></i> JavaScript (ES6+)</span>
+                  <span class="skill-level-badge">Proficient</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="--skill-width: 85%;"></div>
+                </div>
+                <span class="skill-context">DOM manipulation, asynchronous operations, event handling, interactive UI.</span>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-item-head">
+                  <span class="skill-name"><i class="fa-brands fa-html5 text-html"></i> HTML5 & CSS3 / Bootstrap</span>
+                  <span class="skill-level-badge">Advanced</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="--skill-width: 92%;"></div>
+                </div>
+                <span class="skill-context">Semantic layouts, responsive flexbox/grid, custom styling, component kits.</span>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-item-head">
+                  <span class="skill-name"><i class="fa-solid fa-database text-sql"></i> SQL & Relational Databases</span>
+                  <span class="skill-level-badge">Proficient</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="--skill-width: 82%;"></div>
+                </div>
+                <span class="skill-context">Schema design, relational queries, joins, transactions, data integrity.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Core CS & Algorithms Category -->
+          <div class="skill-category-card reveal-on-scroll" data-category="core">
+            <div class="category-header">
+              <div class="cat-icon-box cat-core"><i class="fa-solid fa-network-wired"></i></div>
+              <h3 class="category-name">Core Computer Science & DSA</h3>
+            </div>
+            <p class="category-summary">Mathematical and algorithmic principles for problem-solving, performance, and information security.</p>
+            
+            <div class="skill-items-container">
+              <div class="skill-item">
+                <div class="skill-item-head">
+                  <span class="skill-name"><i class="fa-solid fa-diagram-project text-accent-indigo"></i> Data Structures & Algorithms</span>
+                  <span class="skill-level-badge">Advanced</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="--skill-width: 90%;"></div>
+                </div>
+                <span class="skill-context">Arrays, Linked Lists, Trees, Graphs, Sorting, Searching, Dynamic Programming.</span>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-item-head">
+                  <span class="skill-name"><i class="fa-solid fa-shapes text-accent-cyan"></i> Object-Oriented Programming (OOP)</span>
+                  <span class="skill-level-badge">Advanced</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="--skill-width: 88%;"></div>
+                </div>
+                <span class="skill-context">Encapsulation, Inheritance, Polymorphism, Abstraction, Design Patterns.</span>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-item-head">
+                  <span class="skill-name"><i class="fa-solid fa-lock text-accent-amber"></i> Cryptography & Blockchain</span>
+                  <span class="skill-level-badge">Intermediate</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="--skill-width: 78%;"></div>
+                </div>
+                <span class="skill-context">SHA-256 cryptographic hashing, block immutability, symmetric/asymmetric E2EE.</span>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-item-head">
+                  <span class="skill-name"><i class="fa-solid fa-lightbulb text-accent-emerald"></i> Real-World Problem Solving</span>
+                  <span class="skill-level-badge">Strong</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="--skill-width: 92%;"></div>
+                </div>
+                <span class="skill-context">Translating ambiguous operational problems into structured code solutions.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools & UI/UX Design Category -->
+          <div class="skill-category-card reveal-on-scroll delay-1" data-category="tools">
+            <div class="category-header">
+              <div class="cat-icon-box cat-tools"><i class="fa-solid fa-pen-nib"></i></div>
+              <h3 class="category-name">Design & Developer Tools</h3>
+            </div>
+            <p class="category-summary">Design workflows, version control systems, and collaborative development environments.</p>
+            
+            <div class="skill-items-container">
+              <div class="skill-item">
+                <div class="skill-item-head">
+                  <span class="skill-name"><i class="fa-brands fa-figma text-figma"></i> Figma (UI/UX Design)</span>
+                  <span class="skill-level-badge">Advanced</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="--skill-width: 88%;"></div>
+                </div>
+                <span class="skill-context">Wireframing, high-fidelity prototypes, component design systems, typography.</span>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-item-head">
+                  <span class="skill-name"><i class="fa-brands fa-git-alt text-git"></i> Git & GitHub</span>
+                  <span class="skill-level-badge">Proficient</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="--skill-width: 85%;"></div>
+                </div>
+                <span class="skill-context">Version control, branch management, collaborative pull requests, workflows.</span>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-item-head">
+                  <span class="skill-name"><i class="fa-solid fa-code text-vscode"></i> Modern IDEs & Tooling</span>
+                  <span class="skill-level-badge">Proficient</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="--skill-width: 88%;"></div>
+                </div>
+                <span class="skill-context">VS Code, PyCharm, browser dev tools, debugging workflows, terminal environments.</span>
+              </div>
+
+              <div class="skill-item">
+                <div class="skill-item-head">
+                  <span class="skill-name"><i class="fa-solid fa-users text-accent-indigo"></i> Team Leadership & Teaching</span>
+                  <span class="skill-level-badge">Experienced</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" style="--skill-width: 90%;"></div>
+                </div>
+                <span class="skill-context">Creative and Website Head; workshop instructing through IUCEE series.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS SECTION ==================== -->
+    <section class="projects-section section-padding" id="projects">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Portfolio of Work</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Engineering Projects</span></h2>
+          <p class="section-description">
+            Explore my completed applications and ongoing innovations spanning full-stack web platforms, blockchain ledgers, cryptography, and artificial intelligence.
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- ================= FLAGSHIP ONGOING PROJECT SPOTLIGHT ================= -->
+        <div class="flagship-project-container reveal-on-scroll">
+          <div class="flagship-card">
+            <div class="flagship-badge-header">
+              <span class="badge badge-warning">
+                <span class="pulse-dot warning"></span>
+                In Progress &bull; Featured Main Project
+              </span>
+              <span class="badge badge-category">AI / ML & Intelligent Systems</span>
+            </div>
+
+            <div class="flagship-body-grid">
+              <div class="flagship-info">
+                <h3 class="flagship-title">Autonomous Personal Tax / Finance Agent</h3>
+                <p class="flagship-tagline">
+                  An autonomous artificial intelligence agent designed to streamline personal finance management, tax classification, and proactive fiscal planning.
+                </p>
+                <p class="flagship-description">
+                  Currently engineering an intelligent autonomous agent capable of analyzing personal expense patterns, classifying financial documents, estimating tax liabilities in accordance with relevant fiscal regulations, and delivering contextual, explainable financial recommendations without manual spreadsheet overhead.
+                </p>
+
+                <!-- Key Project Features -->
+                <div class="flagship-highlights">
+                  <div class="f-pill"><i class="fa-solid fa-robot"></i> Autonomous Financial Reasoning</div>
+                  <div class="f-pill"><i class="fa-solid fa-file-invoice-dollar"></i> Automated Tax Deductions Extraction</div>
+                  <div class="f-pill"><i class="fa-solid fa-shield-halved"></i> Privacy-Preserving Architecture</div>
+                  <div class="f-pill"><i class="fa-solid fa-chart-pie"></i> Dynamic Budget Optimization</div>
+                </div>
+
+                <!-- Editable Tech Stack Tags -->
+                <div class="project-tech-tags">
+                  <span class="tech-tag"><i class="fa-brands fa-python"></i> Python</span>
+                  <span class="tech-tag"><i class="fa-solid fa-brain"></i> Autonomous AI Agent</span>
+                  <span class="tech-tag"><i class="fa-solid fa-microchip"></i> LLM Reasoning Engine</span>
+                  <span class="tech-tag"><i class="fa-solid fa-database"></i> Vector & Financial DB</span>
+                  <span class="tech-tag placeholder-tag"><i class="fa-solid fa-pen-to-square"></i> [Custom Tech Stack: Editable]</span>
+                </div>
+
+                <!-- Action Controls -->
+                <div class="project-actions">
+                  <button class="btn btn-primary open-project-modal" data-project-id="project-tax-agent">
+                    <i class="fa-solid fa-circle-info"></i> View Deep-Dive Architecture
+                  </button>
+                  <a href="https://github.com/Apeksha-te" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                    <i class="fa-brands fa-github"></i> <span>GitHub Repo [Placeholder]</span>
+                  </a>
+                  <a href="#contact" class="btn btn-ghost">
+                    <i class="fa-solid fa-bell"></i> Request Demo Preview
+                  </a>
+                </div>
+              </div>
+
+              <div class="flagship-visual">
+                <div class="agent-graphic-wrapper">
+                  <div class="agent-glow-canvas"></div>
+                  <div class="agent-illustration">
+                    <div class="ai-core-icon">
+                      <i class="fa-solid fa-atom pulse-spin"></i>
+                    </div>
+                    <div class="agent-radar-grid">
+                      <div class="radar-node node-1"><i class="fa-solid fa-receipt"></i><span>Expenses</span></div>
+                      <div class="radar-node node-2"><i class="fa-solid fa-calculator"></i><span>Taxes</span></div>
+                      <div class="radar-node node-3"><i class="fa-solid fa-chart-line"></i><span>Forecasting</span></div>
+                      <div class="radar-node node-4"><i class="fa-solid fa-shield-check"></i><span>Compliance</span></div>
+                    </div>
+                  </div>
+                  <div class="agent-status-footer">
+                    <span class="terminal-text-glow">Engine: Active Analysis & Optimization</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Projects Filter Controls -->
+        <div class="projects-filter-bar">
+          <button class="filter-btn active" data-filter="all">All Projects (6)</button>
+          <button class="filter-btn" data-filter="fullstack">Full-Stack Django</button>
+          <button class="filter-btn" data-filter="aiml">AI / ML</button>
+          <button class="filter-btn" data-filter="blockchain">Blockchain</button>
+          <button class="filter-btn" data-filter="security">Security & Cryptography</button>
+        </div>
+
+        <!-- Filterable Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+          
+          <!-- PROJECT 1: Online Therapist Booking System -->
+          <article class="project-card reveal-on-scroll" data-category="fullstack">
+            <div class="card-status-bar">
+              <span class="badge badge-completed"><i class="fa-solid fa-check"></i> Completed</span>
+              <span class="card-category-label">Full-Stack Development</span>
+            </div>
+            <div class="project-card-body">
+              <div class="project-card-icon"><i class="fa-solid fa-notes-medical"></i></div>
+              <h3 class="project-title">Online Therapist Booking System</h3>
+              <p class="project-summary">
+                A secure Django-powered healthcare platform connecting patients with certified therapists, streamlining appointment scheduling and practice availability management.
+              </p>
+              
+              <ul class="project-bullet-points">
+                <li><i class="fa-solid fa-angle-right"></i> Certified therapist verification and detailed professional profiles.</li>
+                <li><i class="fa-solid fa-angle-right"></i> Real-time appointment booking with therapist availability scheduling.</li>
+                <li><i class="fa-solid fa-angle-right"></i> Robust user authentication and seamless Django ORM database transactions.</li>
+              </ul>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Django</span>
+                <span class="tech-tag">Django ORM</span>
+                <span class="tech-tag">HTML5 / CSS3</span>
+                <span class="tech-tag">SQL</span>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <button class="btn btn-primary btn-sm open-project-modal" data-project-id="project-therapist">
+                <i class="fa-solid fa-eye"></i> Details & Modal
+              </button>
+              <a href="https://github.com/Apeksha-te" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" title="View Source on GitHub">
+                <i class="fa-brands fa-github"></i> Code
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: Department Resource Sharing Portal -->
+          <article class="project-card reveal-on-scroll delay-1" data-category="fullstack">
+            <div class="card-status-bar">
+              <span class="badge badge-completed"><i class="fa-solid fa-check"></i> Completed</span>
+              <span class="card-category-label">Full-Stack Mini Project</span>
+            </div>
+            <div class="project-card-body">
+              <div class="project-card-icon"><i class="fa-solid fa-building-columns"></i></div>
+              <h3 class="project-title">Department Resource Sharing Portal</h3>
+              <p class="project-summary">
+                An institutional web platform designed for academic departments to catalog, share, and track shared hardware and educational resources with role-based access.
+              </p>
+
+              <ul class="project-bullet-points">
+                <li><i class="fa-solid fa-angle-right"></i> Multi-tiered role-based authentication (Faculty, Staff, Admin).</li>
+                <li><i class="fa-solid fa-angle-right"></i> Structured resource request lifecycle and administrative approval workflows.</li>
+                <li><i class="fa-solid fa-angle-right"></i> Fully responsive, intuitive user interface created with HTML, CSS, and Bootstrap.</li>
+              </ul>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">Django</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Bootstrap</span>
+                <span class="tech-tag">Role-Based Access</span>
+                <span class="tech-tag">SQL</span>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <button class="btn btn-primary btn-sm open-project-modal" data-project-id="project-resource-portal">
+                <i class="fa-solid fa-eye"></i> Details & Modal
+              </button>
+              <a href="https://github.com/Apeksha-te" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" title="View Source on GitHub">
+                <i class="fa-brands fa-github"></i> Code
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: EcoChain -->
+          <article class="project-card reveal-on-scroll delay-2" data-category="blockchain">
+            <div class="card-status-bar">
+              <span class="badge badge-completed"><i class="fa-solid fa-check"></i> Completed</span>
+              <span class="card-category-label">Blockchain & Sustainability</span>
+            </div>
+            <div class="project-card-body">
+              <div class="project-card-icon"><i class="fa-solid fa-link"></i></div>
+              <h3 class="project-title">EcoChain: Carbon Tracker & Eco Reward</h3>
+              <p class="project-summary">
+                A decentralized carbon footprint accounting platform using a custom private blockchain to verify eco-friendly activities and distribute tamper-proof EcoPoints.
+              </p>
+
+              <ul class="project-bullet-points">
+                <li><i class="fa-solid fa-angle-right"></i> Custom private blockchain architecture utilizing cryptographic SHA-256 hashing.</li>
+                <li><i class="fa-solid fa-angle-right"></i> Linked blocks and immutable records preventing fraudulent emission logs.</li>
+                <li><i class="fa-solid fa-angle-right"></i> Built-in EcoPoints reward tokenization engine to gamify eco-conscious behaviors.</li>
+              </ul>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">Custom Blockchain</span>
+                <span class="tech-tag">SHA-256</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Cryptographic Hashing</span>
+                <span class="tech-tag">Web UI</span>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <button class="btn btn-primary btn-sm open-project-modal" data-project-id="project-ecochain">
+                <i class="fa-solid fa-eye"></i> Details & Modal
+              </button>
+              <a href="https://github.com/Apeksha-te" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" title="View Source on GitHub">
+                <i class="fa-brands fa-github"></i> Code
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: Food Calorie Estimator -->
+          <article class="project-card reveal-on-scroll" data-category="aiml">
+            <div class="card-status-bar">
+              <span class="badge badge-completed"><i class="fa-solid fa-check"></i> Completed</span>
+              <span class="card-category-label">AI / ML & Computer Vision</span>
+            </div>
+            <div class="project-card-body">
+              <div class="project-card-icon"><i class="fa-solid fa-utensils"></i></div>
+              <h3 class="project-title">Food Calorie Estimator</h3>
+              <p class="project-summary">
+                An intelligent nutritional assessment tool utilizing machine learning models and image processing to detect food items and estimate calorie values from photos.
+              </p>
+
+              <ul class="project-bullet-points">
+                <li><i class="fa-solid fa-angle-right"></i> Computer vision preprocessing pipelines for food item boundary segmentation.</li>
+                <li><i class="fa-solid fa-angle-right"></i> Machine learning classification mapping identified meals to nutritional databases.</li>
+                <li><i class="fa-solid fa-angle-right"></i> Clean, responsive dashboard presenting estimated calories and macronutrient breakdowns.</li>
+              </ul>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Machine Learning</span>
+                <span class="tech-tag">Image Processing</span>
+                <span class="tech-tag placeholder-tag">[CV / ML Framework Placeholder]</span>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <button class="btn btn-primary btn-sm open-project-modal" data-project-id="project-calorie">
+                <i class="fa-solid fa-eye"></i> Details & Modal
+              </button>
+              <a href="https://github.com/Apeksha-te" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" title="View Source on GitHub">
+                <i class="fa-brands fa-github"></i> Code
+              </a>
+            </div>
+          </article>
+
+          <!-- PROJECT 5: End-to-End Encrypted Real-Time Chat -->
+          <article class="project-card reveal-on-scroll delay-1" data-category="security">
+            <div class="card-status-bar">
+              <span class="badge badge-completed"><i class="fa-solid fa-check"></i> Completed</span>
+              <span class="card-category-label">Cryptography & Security</span>
+            </div>
+            <div class="project-card-body">
+              <div class="project-card-icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <h3 class="project-title">E2E Encrypted Real-Time Chat App</h3>
+              <p class="project-summary">
+                A private, high-security messaging system incorporating client-side end-to-end encryption to ensure only communicating endpoints can decipher messages.
+              </p>
+
+              <ul class="project-bullet-points">
+                <li><i class="fa-solid fa-angle-right"></i> Client-side cryptographic key generation and end-to-end cipher negotiation.</li>
+                <li><i class="fa-solid fa-angle-right"></i> Real-time bidirectional message dispatch with zero plaintext storage on servers.</li>
+                <li><i class="fa-solid fa-angle-right"></i> Tamper-resistant protocol protecting against interception and eavesdropping.</li>
+              </ul>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">Cryptography</span>
+                <span class="tech-tag">E2EE Protocol</span>
+                <span class="tech-tag">WebSockets / Real-Time</span>
+                <span class="tech-tag">JavaScript / Python</span>
+                <span class="tech-tag placeholder-tag">[Tech Stack Placeholder]</span>
+              </div>
+            </div>
+
+            <div class="project-card-footer">
+              <button class="btn btn-primary btn-sm open-project-modal" data-project-id="project-e2ee-chat">
+                <i class="fa-solid fa-eye"></i> Details & Modal
+              </button>
+              <a href="https://github.com/Apeksha-te" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" title="View Source on GitHub">
+                <i class="fa-brands fa-github"></i> Code
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION SECTION ==================== -->
+    <section class="education-section section-padding bg-alt" id="education">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Academic Milestones</span>
+          <h2 class="section-title">Educational <span class="gradient-text">Journey</span></h2>
+          <p class="section-description">
+            A consistent record of academic excellence across autonomous university, pre-university, and secondary school education.
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <!-- Vertical Education Timeline -->
+        <div class="timeline-container">
+          
+          <!-- TIMELINE ITEM 1: Engineering -->
+          <div class="timeline-item reveal-on-scroll">
+            <div class="timeline-marker">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </div>
+            <div class="timeline-card current-education">
+              <div class="timeline-header">
+                <span class="timeline-badge badge-active">Currently Enrolled &bull; Autonomous</span>
+                <span class="timeline-period"><i class="fa-regular fa-calendar"></i> 2023 &ndash; Present</span>
+              </div>
+              <h3 class="timeline-institution">Malnad College of Engineering (Autonomous), VTU</h3>
+              <h4 class="timeline-degree">Bachelor of Engineering in Information Science and Engineering</h4>
+              <div class="timeline-location"><i class="fa-solid fa-location-dot"></i> Hassan, Karnataka</div>
+
+              <div class="timeline-metrics">
+                <div class="metric-pill">
+                  <span class="metric-name">Cumulative Grade Point Average</span>
+                  <span class="metric-score text-accent-indigo">9.53 / 10.0 CGPA</span>
+                </div>
+              </div>
+
+              <p class="timeline-description">
+                Immersed in comprehensive study of computational principles, advanced Data Structures & Algorithms, Object-Oriented design, Web Technologies, Database Management Systems, and Software Engineering methodologies. Actively involved in campus technical bodies and leading workshops.
+              </p>
+            </div>
+          </div>
+
+          <!-- TIMELINE ITEM 2: Pre-University (PU) -->
+          <div class="timeline-item reveal-on-scroll delay-1">
+            <div class="timeline-marker">
+              <i class="fa-solid fa-school"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-badge">Karnataka State Board</span>
+                <span class="timeline-period"><i class="fa-regular fa-calendar"></i> 2021 &ndash; 2023</span>
+              </div>
+              <h3 class="timeline-institution">St. Joseph's Girls PU College</h3>
+              <h4 class="timeline-degree">Pre-University Course (PU) &bull; PCMB Stream</h4>
+              <div class="timeline-location"><i class="fa-solid fa-location-dot"></i> Chikkamagaluru, Karnataka</div>
+
+              <div class="timeline-metrics">
+                <div class="metric-pill">
+                  <span class="metric-name">State Board Aggregate</span>
+                  <span class="metric-score text-accent-cyan">94.83%</span>
+                </div>
+              </div>
+
+              <p class="timeline-description">
+                Graduated with distinction in Physics, Chemistry, Mathematics, and Biology (PCMB). Established strong quantitative, analytical, and logical reasoning competencies foundational to computer science.
+              </p>
+            </div>
+          </div>
+
+          <!-- TIMELINE ITEM 3: SSLC -->
+          <div class="timeline-item reveal-on-scroll delay-2">
+            <div class="timeline-marker">
+              <i class="fa-solid fa-award"></i>
+            </div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <span class="timeline-badge">Secondary School (10th)</span>
+                <span class="timeline-period"><i class="fa-regular fa-calendar"></i> 2021</span>
+              </div>
+              <h3 class="timeline-institution">St. Joseph Convent Girls High School</h3>
+              <h4 class="timeline-degree">Secondary School Leaving Certificate (SSLC)</h4>
+              <div class="timeline-location"><i class="fa-solid fa-location-dot"></i> Chikkamagaluru, Karnataka</div>
+
+              <div class="timeline-metrics">
+                <div class="metric-pill">
+                  <span class="metric-name">Board Examination Score</span>
+                  <span class="metric-score text-accent-emerald">97.76%</span>
+                </div>
+              </div>
+
+              <p class="timeline-description">
+                Completed secondary education with top honors and an outstanding 97.76% overall percentage, demonstrating high academic dedication and foundational scientific discipline.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ACHIEVEMENTS & COMPETITIONS SECTION ==================== -->
+    <section class="achievements-section section-padding" id="achievements">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Recognition & Hackathons</span>
+          <h2 class="section-title">Competitions & <span class="gradient-text">Achievements</span></h2>
+          <p class="section-description">
+            Demonstrated problem-solving, rapid prototyping, and high-intensity collaboration across competitive regional and national hackathons.
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="achievements-grid">
+          
+          <!-- ACHIEVEMENT 1: InnovateX 2nd Prize -->
+          <div class="achievement-card highlight-achievement reveal-on-scroll">
+            <div class="achievement-icon-wrapper prize-gold">
+              <i class="fa-solid fa-trophy"></i>
+            </div>
+            <div class="achievement-content">
+              <div class="achievement-top-meta">
+                <span class="badge badge-winner"><i class="fa-solid fa-medal"></i> Second Prize Winner</span>
+                <span class="achievement-date">Innofesta 2024</span>
+              </div>
+              <h3 class="achievement-title">InnovateX &bull; Innofesta 2024</h3>
+              <p class="achievement-venue"><i class="fa-solid fa-location-pin"></i> Organized at Hyderabad Institute of Technology and Management (HITAM)</p>
+              <p class="achievement-desc">
+                Secured <strong>Second Prize</strong> for outstanding technical innovation, problem analysis, and teamwork in a competitive group project challenge, outperforming multiple collegiate teams.
+              </p>
+              <div class="achievement-actions">
+                <button class="btn btn-outline btn-sm open-cert-modal" data-cert-title="Second Prize - InnovateX (Innofesta 2024)" data-cert-issuer="HITAM" data-cert-desc="Secured Second Prize at InnovateX, Innofesta 2024, organized at HITAM, for outstanding innovation and teamwork in a group project.">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> View Certificate
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- ACHIEVEMENT 2: CICADA 2025 Hackathon -->
+          <div class="achievement-card reveal-on-scroll delay-1">
+            <div class="achievement-icon-wrapper prize-hackathon">
+              <i class="fa-solid fa-stopwatch"></i>
+            </div>
+            <div class="achievement-content">
+              <div class="achievement-top-meta">
+                <span class="badge badge-hackathon"><i class="fa-solid fa-code"></i> 24-Hour Hackathon</span>
+                <span class="achievement-date">CICADA 2025</span>
+              </div>
+              <h3 class="achievement-title">CICADA 2025 Inter-Collegiate Tech Fest</h3>
+              <p class="achievement-venue"><i class="fa-solid fa-location-pin"></i> Hosted by Atria Institute of Technology, Bengaluru</p>
+              <p class="achievement-desc">
+                Competed in an intense <strong>24-Hour continuous hackathon</strong>, collaborating in real-time to architect, prototype, and pitch a practical technological solution under rigorous time constraints.
+              </p>
+              <div class="achievement-actions">
+                <button class="btn btn-outline btn-sm open-cert-modal" data-cert-title="24-Hour Hackathon Participation - CICADA 2025" data-cert-issuer="Atria Institute of Technology" data-cert-desc="Participated in the 24-Hour hackathon at CICADA 2025 Inter-Collegiate Tech Fest, hosted by Atria Institute of Technology.">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> View Certificate
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- ACHIEVEMENT 3: EduAIThon ICTIEE 2026 -->
+          <div class="achievement-card reveal-on-scroll delay-2">
+            <div class="achievement-icon-wrapper prize-ai">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <div class="achievement-content">
+              <div class="achievement-top-meta">
+                <span class="badge badge-ai"><i class="fa-solid fa-atom"></i> AI & EdTech Innovation</span>
+                <span class="achievement-date">ICTIEE 2026 / IASF2026</span>
+              </div>
+              <h3 class="achievement-title">EduAIThon &bull; IASF2026 (ICTIEE 2026)</h3>
+              <p class="achievement-venue"><i class="fa-solid fa-location-pin"></i> Held at GITAM University</p>
+              <p class="achievement-desc">
+                Actively participated in the prestigious <strong>EduAIThon</strong> as part of the Indo-Universal Collaboration for Engineering Education (ICTIEE 2026 / IASF2026), prototyping AI-driven interventions in learning.
+              </p>
+              <div class="achievement-actions">
+                <button class="btn btn-outline btn-sm open-cert-modal" data-cert-title="EduAIThon Participation - IASF2026 (ICTIEE 2026)" data-cert-issuer="GITAM University / ICTIEE" data-cert-desc="Actively participated in the EduAIThon as part of IASF2026 during the ICTIEE 2026 held at GITAM University.">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> View Certificate
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CERTIFICATIONS SECTION ==================== -->
+    <section class="certifications-section section-padding bg-alt" id="certifications">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Validated Knowledge</span>
+          <h2 class="section-title">Professional <span class="gradient-text">Certifications</span></h2>
+          <p class="section-description">
+            Industry and academic certifications validating proficiency in modern web architecture, cloud engineering, and foundational artificial intelligence.
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="certifications-grid">
+          
+          <!-- CERT 1: Web Development -->
+          <div class="cert-card reveal-on-scroll">
+            <div class="cert-icon-box cert-web"><i class="fa-solid fa-code"></i></div>
+            <div class="cert-body">
+              <span class="cert-provider">Technical Certification</span>
+              <h3 class="cert-title">Web Development Certification</h3>
+              <p class="cert-summary">
+                Comprehensive certification validating skills across semantic HTML5, modern CSS3 styling, JavaScript logic, responsive UI implementation, and client-server workflows.
+              </p>
+              <div class="cert-badges">
+                <span class="cert-tag">HTML5 / CSS3</span>
+                <span class="cert-tag">JavaScript</span>
+                <span class="cert-tag">Frontend Architecture</span>
+              </div>
+            </div>
+            <div class="cert-footer">
+              <button class="btn btn-outline btn-sm btn-full open-cert-modal" data-cert-title="Web Development Certification" data-cert-issuer="Recognized Credential Provider" data-cert-desc="Verified completion of rigorous Web Development curriculum covering responsive UI, modern JavaScript, and web architecture standards.">
+                <i class="fa-solid fa-certificate"></i> View Credential Details
+              </button>
+            </div>
+          </div>
+
+          <!-- CERT 2: AWS -->
+          <div class="cert-card reveal-on-scroll delay-1">
+            <div class="cert-icon-box cert-aws"><i class="fa-brands fa-aws"></i></div>
+            <div class="cert-body">
+              <span class="cert-provider">Amazon Web Services</span>
+              <h3 class="cert-title">AWS Certification</h3>
+              <p class="cert-summary">
+                Certified foundational knowledge in Amazon Web Services cloud infrastructure, compute instances, cloud security, storage solutions, and distributed architecture paradigms.
+              </p>
+              <div class="cert-badges">
+                <span class="cert-tag">Cloud Infrastructure</span>
+                <span class="cert-tag">AWS Services</span>
+                <span class="cert-tag">Cloud Security</span>
+              </div>
+            </div>
+            <div class="cert-footer">
+              <button class="btn btn-outline btn-sm btn-full open-cert-modal" data-cert-title="AWS Certification" data-cert-issuer="Amazon Web Services" data-cert-desc="Certified understanding of AWS cloud concepts, security best practices, core cloud services, and scalable architecture basics.">
+                <i class="fa-solid fa-certificate"></i> View Credential Details
+              </button>
+            </div>
+          </div>
+
+          <!-- CERT 3: IBM AI -->
+          <div class="cert-card reveal-on-scroll delay-2">
+            <div class="cert-icon-box cert-ibm"><i class="fa-solid fa-brain"></i></div>
+            <div class="cert-body">
+              <span class="cert-provider">IBM</span>
+              <h3 class="cert-title">IBM &bull; Getting Started with AI</h3>
+              <p class="cert-summary">
+                Specialized credential covering artificial intelligence fundamentals, machine learning taxonomy, deep learning neural models, natural language processing, and ethical AI systems.
+              </p>
+              <div class="cert-badges">
+                <span class="cert-tag">Artificial Intelligence</span>
+                <span class="cert-tag">Machine Learning</span>
+                <span class="cert-tag">AI Ethics</span>
+              </div>
+            </div>
+            <div class="cert-footer">
+              <button class="btn btn-outline btn-sm btn-full open-cert-modal" data-cert-title="IBM - Getting Started with AI" data-cert-issuer="IBM" data-cert-desc="Verified completion of IBM's Getting Started with AI curriculum covering core machine learning models, applications, and ethical frameworks.">
+                <i class="fa-solid fa-certificate"></i> View Credential Details
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== LEADERSHIP & EXTRA-CURRICULAR SECTION ==================== -->
+    <section class="leadership-section section-padding" id="leadership">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Leadership & Impact</span>
+          <h2 class="section-title">Leadership & <span class="gradient-text">Extra-Curricular Activities</span></h2>
+          <p class="section-description">
+            Driving creative digital direction, mentoring aspiring student developers, and contributing to collaborative technical excellence.
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="leadership-grid">
+          
+          <!-- ITEM 1: Creative and Website Head -->
+          <div class="leadership-card reveal-on-scroll">
+            <div class="leadership-icon"><i class="fa-solid fa-crown"></i></div>
+            <div class="leadership-body">
+              <span class="leadership-tag">Student Leadership & Engineering</span>
+              <h3 class="leadership-title">Creative and Website Head</h3>
+              <p class="leadership-org">Student Organization & Technical Council</p>
+              
+              <ul class="leadership-points">
+                <li><i class="fa-solid fa-circle-check"></i> Led cross-functional teams overseeing all creative branding, digital media, and official website initiatives.</li>
+                <li><i class="fa-solid fa-circle-check"></i> Formulated user experience patterns in Figma and ensured responsive, accessible web deployments.</li>
+                <li><i class="fa-solid fa-circle-check"></i> Coordinated technical operations across institutional hackathons and inter-collegiate events.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ITEM 2: Workshop Instructor (IUCEE) -->
+          <div class="leadership-card reveal-on-scroll delay-1">
+            <div class="leadership-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+            <div class="leadership-body">
+              <span class="leadership-tag">Technical Mentorship & Teaching</span>
+              <h3 class="leadership-title">Frontend Web Development Workshop Instructor</h3>
+              <p class="leadership-org">IUCEE (Indo-Universal Collaboration for Engineering Education) Workshop Series</p>
+              
+              <ul class="leadership-points">
+                <li><i class="fa-solid fa-circle-check"></i> Prepared and instructed interactive workshops on core frontend web technologies for university students.</li>
+                <li><i class="fa-solid fa-circle-check"></i> Guided attendees through practical, hands-on coding exercises in HTML5, CSS3, and JavaScript fundamentals.</li>
+                <li><i class="fa-solid fa-circle-check"></i> Mentored over 100+ students on modern web best practices, responsive layouts, and debugging workflows.</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- ITEM 3: Innovative Technical Projects -->
+          <div class="leadership-card reveal-on-scroll delay-2">
+            <div class="leadership-icon"><i class="fa-solid fa-lightbulb"></i></div>
+            <div class="leadership-body">
+              <span class="leadership-tag">Innovation & Technical Contributions</span>
+              <h3 class="leadership-title">Technical Project Contributor</h3>
+              <p class="leadership-org">Collegiate R&D & Open Collaboration</p>
+              
+              <ul class="leadership-points">
+                <li><i class="fa-solid fa-circle-check"></i> Successfully architected and deployed innovative engineering projects demonstrating scalable development skills.</li>
+                <li><i class="fa-solid fa-circle-check"></i> Champions clean code principles, modular Git workflows, and rigorous code reviews within team initiatives.</li>
+                <li><i class="fa-solid fa-circle-check"></i> Consistently explores bleeding-edge tech including LLM autonomous reasoning and cryptographic hashing.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="contact-section section-padding bg-alt" id="contact">
+      <div class="container">
+        <div class="section-header text-center">
+          <span class="section-subtitle">Let's Connect</span>
+          <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+          <p class="section-description">
+            I am actively seeking software engineering internships, graduate engineering roles, and innovative project collaborations. Feel free to drop a message!
+          </p>
+          <div class="section-divider"></div>
+        </div>
+
+        <div class="contact-wrapper">
+          <!-- Left Column: Contact Cards -->
+          <div class="contact-info-column reveal-on-scroll">
+            <h3 class="contact-info-title">Contact Information</h3>
+            <p class="contact-info-desc">
+              Have an opening, an interesting project idea, or just want to discuss software engineering and DSA? Reach out through any of these channels:
+            </p>
+
+            <div class="contact-channel-list">
+              <a href="mailto:apekshaar835@gmail.com" class="channel-card">
+                <div class="channel-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="channel-details">
+                  <span class="channel-type">Email Address</span>
+                  <span class="channel-val">apekshaar835@gmail.com</span>
+                </div>
+                <span class="channel-action"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+              </a>
+
+              <a href="tel:+9148809662" class="channel-card">
+                <div class="channel-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="channel-details">
+                  <span class="channel-type">Direct Phone</span>
+                  <span class="channel-val">+91 91488 09662</span>
+                </div>
+                <span class="channel-action"><i class="fa-solid fa-phone-flip"></i></span>
+              </a>
+
+              <div class="channel-card non-clickable">
+                <div class="channel-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="channel-details">
+                  <span class="channel-type">Location</span>
+                  <span class="channel-val">Hassan, Karnataka, India</span>
+                </div>
+              </div>
+
+              <div class="channel-card non-clickable">
+                <div class="channel-icon"><i class="fa-solid fa-building-columns"></i></div>
+                <div class="channel-details">
+                  <span class="channel-type">Institution</span>
+                  <span class="channel-val">Malnad College of Engineering (VTU)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Social Links Panel -->
+            <div class="contact-socials-box">
+              <span class="social-box-title">Follow & Connect</span>
+              <div class="social-button-group">
+                <a href="https://github.com/Apeksha-te" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i class="fa-brands fa-github"></i> GitHub: @Apeksha-te
+                </a>
+                <a href="https://www.linkedin.com/in/apeksha-a-r-2342a7295" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm">
+                  <i class="fa-brands fa-linkedin"></i> LinkedIn Profile
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Contact Form -->
+          <div class="contact-form-column reveal-on-scroll delay-1">
+            <div class="form-container-card">
+              <h3 class="form-title">Send a Direct Message</h3>
+              <p class="form-subtitle">Fill out the form below to initiate a conversation.</p>
+
+              <form id="portfolio-contact-form" class="contact-form" novalidate>
+                <div class="form-group">
+                  <label for="contact-name">Your Full Name <span class="required-star">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="fa-regular fa-user input-icon"></i>
+                    <input type="text" id="contact-name" name="name" placeholder="e.g. John Doe" required />
+                  </div>
+                  <span class="field-error" id="name-error"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-email">Your Email Address <span class="required-star">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="fa-regular fa-envelope input-icon"></i>
+                    <input type="email" id="contact-email" name="email" placeholder="e.g. johndoe@company.com" required />
+                  </div>
+                  <span class="field-error" id="email-error"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-subject">Subject <span class="required-star">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="fa-regular fa-bookmark input-icon"></i>
+                    <input type="text" id="contact-subject" name="subject" placeholder="e.g. Software Engineering Opportunity / Collaboration" required />
+                  </div>
+                  <span class="field-error" id="subject-error"></span>
+                </div>
+
+                <div class="form-group">
+                  <label for="contact-message">Message <span class="required-star">*</span></label>
+                  <div class="input-wrapper">
+                    <i class="fa-regular fa-message input-icon textarea-icon"></i>
+                    <textarea id="contact-message" name="message" rows="5" placeholder="Share details about the role, project, or inquiry..." required></textarea>
+                  </div>
+                  <span class="field-error" id="message-error"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full submit-btn" id="contact-submit-btn">
+                  <span class="btn-text">Send Message</span>
+                  <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                </button>
+
+                <div class="form-feedback hidden" id="form-feedback" role="alert"></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#hero" class="nav-brand">
+            <span class="brand-monogram">AR</span>
+            <span class="brand-name">Apeksha A R<span class="brand-dot">.</span></span>
+          </a>
+          <p class="footer-bio">
+            Information Science Engineering student at Malnad College of Engineering (Autonomous), VTU. Passionate about software engineering, scalable backend systems, and cutting-edge tech.
+          </p>
+        </div>
+
+        <div class="footer-nav">
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social-column">
+          <h4 class="footer-title">Connect</h4>
+          <div class="footer-social-icons">
+            <a href="https://github.com/Apeksha-te" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/apeksha-a-r-2342a7295" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn Profile"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:apekshaar835@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="tel:+9148809662" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+          </div>
+          <p class="footer-location"><i class="fa-solid fa-location-dot"></i> Hassan, Karnataka, India</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-text">
+          &copy; <span id="current-year">2026</span> <strong>Apeksha A R</strong>. All rights reserved. Crafted with clean semantic HTML, modern CSS & JavaScript.
+        </p>
+
+        <a href="#hero" class="back-to-top-btn" id="back-to-top" aria-label="Scroll back to top">
+          <span>Back to Top</span>
+          <i class="fa-solid fa-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== MODAL: PROJECT DETAILS ==================== -->
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <div class="modal-header-titles">
+          <span class="modal-badge" id="modal-project-badge">Project Category</span>
+          <h3 class="modal-title" id="modal-project-title">Project Title</h3>
+        </div>
+        <button class="modal-close-btn" id="close-project-modal" aria-label="Close modal window">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-body" id="modal-project-content">
+        <!-- Content will be injected dynamically via JavaScript -->
+      </div>
+
+      <div class="modal-footer" id="modal-project-footer">
+        <a href="https://github.com/Apeksha-te" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="modal-github-btn">
+          <i class="fa-brands fa-github"></i> <span>View Code Repository</span>
+        </a>
+        <a href="#contact" class="btn btn-primary" id="modal-demo-btn">
+          <i class="fa-solid fa-arrow-up-right-from-square"></i> <span>Live Demo / Details</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== MODAL: CERTIFICATE / ACHIEVEMENT PREVIEW ==================== -->
+  <div class="modal-backdrop" id="cert-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-dialog modal-dialog-cert">
+      <div class="modal-header">
+        <div class="modal-header-titles">
+          <span class="modal-badge badge-winner" id="modal-cert-badge">Credential Verification</span>
+          <h3 class="modal-title" id="modal-cert-title">Certificate Title</h3>
+        </div>
+        <button class="modal-close-btn" id="close-cert-modal" aria-label="Close modal window">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="cert-preview-card">
+          <div class="cert-preview-icon">
+            <i class="fa-solid fa-award"></i>
+          </div>
+          <div class="cert-preview-details">
+            <h4 id="modal-cert-issuer" class="cert-issuer-text">Issued By: Organizing Committee</h4>
+            <p id="modal-cert-desc" class="cert-desc-text">Description of the award, competition, or verified certification.</p>
+            
+            <div class="cert-notice-box">
+              <i class="fa-solid fa-circle-info"></i>
+              <span>Official certificate PDF / verifiable digital link placeholder. Update the direct file path or URL in <code>script.js</code> (or link your Google Drive / Credly credential).</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="modal-cert-dismiss">Close Preview</button>
+        <a href="mailto:apekshaar835@gmail.com?subject=Certificate%20Verification%20Inquiry" class="btn btn-primary" id="modal-cert-link" target="_blank" rel="noopener noreferrer">
+          <i class="fa-solid fa-file-pdf"></i> <span>Request / View Certificate Copy</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== MODAL: RESUME VIEW / DOWNLOAD ==================== -->
+  <div class="modal-backdrop" id="resume-modal" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="modal-dialog modal-dialog-resume">
+      <div class="modal-header">
+        <div class="modal-header-titles">
+          <span class="modal-badge badge-active">Candidate Resume</span>
+          <h3 class="modal-title">Apeksha A R &bull; Official Resume</h3>
+        </div>
+        <button class="modal-close-btn" id="close-resume-modal" aria-label="Close modal window">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <div class="resume-modal-overview">
+          <div class="resume-snippet-box">
+            <h4>Apeksha A R</h4>
+            <p><strong>B.E. Information Science and Engineering</strong> &bull; Malnad College of Engineering (Autonomous), VTU</p>
+            <p><strong>CGPA:</strong> 9.53 | <strong>Email:</strong> apekshaar835@gmail.com | <strong>Location:</strong> Hassan, Karnataka</p>
+            <hr class="resume-divider" />
+            <p class="resume-summary-text">
+              Aspiring Software Engineer with strong foundation in Data Structures and Algorithms (DSA) and hands-on experience in Python, C, Java, and Web Development. Passionate about building efficient, scalable solutions and eager to learn, contribute, and grow in an innovative real-world environment.
+            </p>
+          </div>
+
+          <div class="resume-download-actions">
+            <a href="resume.pdf" download="Apeksha_A_R_Resume.pdf" class="btn btn-primary btn-full" id="direct-resume-download">
+              <i class="fa-solid fa-download"></i> Download Full Resume (PDF)
+            </a>
+            <a href="mailto:apekshaar835@gmail.com?subject=Resume%20Inquiry%20-%20Apeksha%20A%20R" class="btn btn-outline btn-full">
+              <i class="fa-solid fa-envelope"></i> Request Latest Copy via Email
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" id="modal-resume-dismiss">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- External Confetti Effect Library for Contact Form Submission -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+  <!-- Core JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
